@@ -1,0 +1,61 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Edu+AU+VIC+WA+NT+Pre:wght@500&display=swap');
+
+/* Apply the custom font to the entire body */
+body {
+    font-family: "Dancing Script", cursive;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    border: 1px dotted red;
+    background-color: bisque;
+}
+
+.horizontal-line {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background-color:aqua;
+}
+
+.vertical-line {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    width: 1px;
+    background-color: aqua;
+}
+
+
+
+table, th, td {
+    border: 1px solid black ;
+    border-collapse: collapse;
+}
+
+h1{
+   border: dotted red 1px;
+   padding: 5px;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: pink;
+    position: relative; /* Ensure .center is positioned relative for z-index to work */
+    width: 50%;
+    border: dotted 1px greenyellow;
+}
+
+.center-horizontal-line {
+    width: 100%; /* Full width of the .center div */
+    height: 1px;
+    background-color: aqua; /* Match the color of other lines */
+    position: absolute; /* Position it absolutely within .center */
+    top: 50%; /* Center it vertically */
+    left: 0;
+}
