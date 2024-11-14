@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bootstrap Grid Example</title>
+  <!-- Include Bootstrap CSS -->
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+
+  <h2>Bootstrap Grid System Example</h2>
+  <div class="container">
+    <div class="row">
+        <div class="col-12 bg-primary mt-3 border border-danger">
+            <p>Column One x12</p>
+        </div>
+
+        <div class="col-md-11 bg-secondary mt-3 border border-danger">
+            <p>Column One x11</p>
+        </div>
+        <!-- col-sm-12 when display gets small the column One x 1 gets full width -->
+        <div class="col-md-1 col-sm-12 bg-secondary mt-3 border border-danger">
+            <p>Column One x1</p>
+        </div>
+
+        <div class="col-10 bg-primary mt-3 border border-danger">
+            <p>Column One x10</p>
+        </div>
+        <!-- if we didn't use the col-sm-12 then small devices dont get the seperate column as full width -->
+        <div class="col-2 bg-primary mt-3 border border-danger">
+            <p>Column One x2</p>
+        </div>
+
+    </div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.9/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</body>
+</html>
