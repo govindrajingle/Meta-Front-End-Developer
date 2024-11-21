@@ -1,0 +1,12 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Edu+AU+VIC+WA+NT+Pre:wght@500&display=swap');
+
+/* Apply the custom font to the entire body */
+body {
+    /* ! important over rides the bootstrap files */
+    font-family: "Dancing Script", cursive !important;
+    font-weight: 600;
+    font-style: normal;
+}
+
+
