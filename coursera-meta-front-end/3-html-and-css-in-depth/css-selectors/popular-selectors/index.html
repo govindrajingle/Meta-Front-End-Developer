@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    /* group selectors / selector stacking */
+    body,
+    a {
+      display: block;
+    }
+    /* Attribute selectors - by targetting values */
+    /* 1. anchor link who has class will be affected */
+    a[class] {
+      color: darkgreen;
+    }
+    /* 2. all a links having meta in link*/
+    /* a[href*="meta"] {
+      color: darkgreen;
+    } */
+    /* 3. can specify the link*/
+    /* a[href="https://about.meta.com/"]
+    {
+      color: darkgreen;
+    } */
+    /* 4. select nth item from unordered list */
+    li:nth-child(2) {
+      color: aqua;
+    }
+    /* 5. Affect all the html elements */
+    * {
+      color: pink;
+    }
+  </style>
+  <body>
+    <a href="https://about.meta.com/">Meta - Home</a>
+    <a href="https://about.meta.com/company-info/" class="about"
+      >Meta - About</a
+    >
+    <a href="https://about.meta.com/technologies/" class="home"
+      >Meta - Technologies</a
+    >
+    <ul>
+      <li>one</li>
+      <li>two</li>
+      <li>three</li>
+    </ul>
+  </body>
+</html>
