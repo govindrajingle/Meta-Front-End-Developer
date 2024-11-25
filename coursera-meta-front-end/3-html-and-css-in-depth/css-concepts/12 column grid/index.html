@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .border{
+        border: 1px solid red;
+    }
+    .parent{
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+    }
+    .segment{
+        display: grid;
+        place-items: center;
+        text-align: center;
+        grid-template-rows: 100px;
+    }
+    .twelve{
+        background-color: lightseagreen;
+        /* total width is 12 and 1 is to give we can change from 2 to 12 to remove that blocks (12-blocks) */
+        grid-column: 1/ span 12;
+    }
+    .eight{
+        background-color: bisque;
+        /* total width is 12 and 1 is to give we can change from 2 to 12 to remove that blocks (12-blocks) */
+        grid-column: 5/ span 8;
+    }
+    .four{
+        background-color: lightblue;
+        /* total width is 12 and 1 is to give we can change from 2 to 12 to remove that blocks (12-blocks) */
+        grid-column: 1/ span 4;
+    }
+    .six{
+        background-color: lightsteelblue;
+        /* total width is 12 and 1 is to give we can change from 2 to 12 to remove that blocks (12-blocks) */
+        grid-column: 5/ span 6;
+    }
+    .seven{
+        background-color: lightcoral;
+        /* total width is 12 and 1 is to give we can change from 2 to 12 to remove that blocks (12-blocks) */
+        grid-column: 3/ span 7;
+    }
+</style>
+<body>
+    <div class="parent border">
+        <div class="segment twelve">Span 12</div>
+        <div class="segment eight">Span 8</div>
+        <div class="segment four">Span 4</div>
+        <div class="segment six">Span 6</div>
+        <div class="segment seven">Span 7</div>
+        <div class="segment twelve">Span 12</div>
+    </div>
+</body>
+</html>
